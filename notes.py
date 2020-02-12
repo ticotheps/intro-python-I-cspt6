@@ -43,4 +43,24 @@ print(f"s_names = {s_names}\n")
 
 # Create an empty `dictionary` (very similar to an `object` in JavaScript)
 new_dict = {}
-print(f"new_dict = {new_dict}")
+print(f"new_dict = {new_dict}\n")
+
+# Create a dictionary with at least two key:value pairs
+food_dict = {
+    'apple': 'is a fruit',
+    'carrot': 'is a vegetable'
+}
+
+# Access & print an element in the dictionary
+chosen_food = 'apple'
+print(food_dict[chosen_food], "\n")
+
+# Iterate through the keys in a dictionary
+for key in food_dict:
+    print(f"key = {key}")
+print("\n")
+
+# Access the keys AND the values of a dictionary
+for key, value in food_dict.items():
+    print(f"{key} : {value}")
+print("\n")
