@@ -23,14 +23,17 @@ import os
 # See the docs for the OS module: https://docs.python.org/3.7/library/os.html
 
 # Print the current process ID
-# Returns the `Effective Group` id of the current process
+# Returns the `Effective Group` ID of the current process
 print(f"Current EG process ID: {os.getegid()}\n")
 
-# Returns the `Real Group` id of the current process
+# Returns the `Real Group` ID of the current process
 print(f"Current RG process ID: {os.getgid()}\n")
 
+# Returns the `Real User` ID of the current process
+print(f"Current RU process ID: {os.getuid()}\n")
+
 # Print the current working directory (cwd):
-# YOUR CODE HERE
+print(f"Current working directory: {os.getcwd()}\n")
 
 # Print out your machine's login name
 # YOUR CODE HERE
