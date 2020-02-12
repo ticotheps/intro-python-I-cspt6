@@ -13,7 +13,7 @@ for (index, arg) in enumerate(sys.argv):
     print(f"Command Line Argument #{index + 1}: {arg}")
 
 # Print out the OS platform you're using:
-# YOUR CODE HERE
+print(f"Current Platform: {sys.platform}")
 
 # Print out the version of Python you're using:
 # YOUR CODE HERE
