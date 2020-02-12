@@ -10,20 +10,24 @@ import sys
 
 # Print out the command line arguments in sys.argv, one per line:
 for (index, arg) in enumerate(sys.argv):
-    print(f"Command Line Argument #{index + 1}: {arg}")
+    print(f"Command Line Argument #{index + 1}: {arg}\n")
 
 # Print out the OS platform you're using:
-print(f"Current Platform: {sys.platform}")
+print(f"Current Platform: {sys.platform}\n")
 
 # Print out the version of Python you're using:
-print(f"Current Python version: {sys.implementation.version}")
+print(f"Current Python version: {sys.implementation.version}\n")
 
 
 import os
 # See the docs for the OS module: https://docs.python.org/3.7/library/os.html
 
 # Print the current process ID
-# YOUR CODE HERE
+# Returns the `Effective Group` id of the current process
+print(f"Current EG process ID: {os.getegid()}\n")
+
+# Returns the `Real Group` id of the current process
+print(f"Current RG process ID: {os.getgid()}\n")
 
 # Print the current working directory (cwd):
 # YOUR CODE HERE
