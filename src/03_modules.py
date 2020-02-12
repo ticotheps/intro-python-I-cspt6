@@ -36,4 +36,5 @@ print(f"Current RU process ID: {os.getuid()}\n")
 print(f"Current working directory: {os.getcwd()}\n")
 
 # Print out your machine's login name
-# YOUR CODE HERE
+import pwd
+print(f"Current machine's login name: {pwd.getpwuid(os.getuid())[0]}\n")
