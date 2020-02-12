@@ -16,7 +16,7 @@ for (index, arg) in enumerate(sys.argv):
 print(f"Current Platform: {sys.platform}")
 
 # Print out the version of Python you're using:
-# YOUR CODE HERE
+print(f"Current Python version: {sys.implementation.version}")
 
 
 import os
