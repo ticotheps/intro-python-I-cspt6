@@ -64,3 +64,31 @@ print("\n")
 for key, value in food_dict.items():
     print(f"{key} : {value}")
 print("\n")
+
+# Bools (Boolean values) in Python
+bool_var_a = True
+bool_var_b = False
+
+print(f"bool_var_a = {bool_var_a}")
+print(f"bool_var_b = {bool_var_b}\n")
+
+# `Tuples` in Python = immutable lists in Python
+tup = (1,2,3,4)
+tup_1 = (1,)  # must use a trailing ',' (comma)
+print(f"tup = {tup}")
+print(f"tup_1 = {tup_1}\n")
+
+# `Sets` in Python = a collection of unordered, unindexed, unique items.
+# `Sets` cannot have duplicate items in them.
+# `Sets` can also be thought of as `dictionaries` with only `keys` (no `values`)
+fruit_set = {'apple', 'banana', 'cucumber'}
+
+# Printing items from a set
+for item in fruit_set:
+    print(item)
+    
+# Checking whether or not an item exists within a set
+print('cucumber' in fruit_set)
+
+if 'cucumber' in fruit_set:
+    print("Pretty sure it's a vegetable")
